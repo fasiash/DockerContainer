@@ -17,6 +17,7 @@ public class ValidLogin extends BaseTest
 	public void testclass() throws Exception
 	{
 		WebDriver driver=PageDriver.getDriver();
+		driver.get("https://www.saucedemo.com/");
 		pageobjects_docker.LoginPage validpage=new pageobjects_docker.LoginPage();
 		validpage.login("standard_user", "secret_sauce");
 		Thread.sleep(3000);
