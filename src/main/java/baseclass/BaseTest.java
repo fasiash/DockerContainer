@@ -27,6 +27,8 @@ public class BaseTest
 	 {
 		 ChromeOptions options = new ChromeOptions();
 	     options.setAcceptInsecureCerts(true);
+	     System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+	      //  ChromeOptions options = new ChromeOptions();
 	     options.setCapability(CapabilityType.BROWSER_NAME,"chrome");
 	  
 	    try {
