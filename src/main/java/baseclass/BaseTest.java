@@ -30,7 +30,7 @@ public class BaseTest
 	     options.setCapability(CapabilityType.BROWSER_NAME,"chrome");
 	  
 	    try {
-	  	   driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+	  	   driver = new RemoteWebDriver(new URL("http://localhost:7900/wd/hub"), options);
 	       
 	    } catch (MalformedURLException e) {
 	        System.out.println("Invalid grid URL");
