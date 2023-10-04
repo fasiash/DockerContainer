@@ -40,8 +40,9 @@ public class BaseTest
 	        System.out.println(e.getMessage());
 	    }
 
-	driver.get("https://www.saucedemo.com/");
+	//driver.get("https://www.saucedemo.com/");
 		 PageDriver.setDriver(driver);
+		 driver.get("https://www.saucedemo.com/");
 	 }
 	 @AfterClass
 	 public void teardown()
