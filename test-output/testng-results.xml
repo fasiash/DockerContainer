@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-04T12:22:57 IST" name="Suite" finished-at="2023-10-04T12:23:06 IST" duration-ms="9145">
+    <groups>
+    </groups>
+    <test started-at="2023-10-04T12:22:57 IST" name="Test" finished-at="2023-10-04T12:23:06 IST" duration-ms="9145">
+      <class name="testcases_docker.InvalidLogin">
+        <test-method is-config="true" signature="browsersetup()[pri:0, instance:testcases_docker.InvalidLogin@1a677343]" started-at="2023-10-04T12:22:57 IST" name="browsersetup" finished-at="2023-10-04T12:23:01 IST" duration-ms="3392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browsersetup -->
+        <test-method signature="testclass()[pri:0, instance:testcases_docker.InvalidLogin@1a677343]" started-at="2023-10-04T12:23:01 IST" name="testclass" finished-at="2023-10-04T12:23:01 IST" duration-ms="542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testclass -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases_docker.InvalidLogin@1a677343]" started-at="2023-10-04T12:23:01 IST" name="teardown" finished-at="2023-10-04T12:23:01 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testcases_docker.InvalidLogin -->
+      <class name="testcases_docker.ValidLogin">
+        <test-method is-config="true" signature="browsersetup()[pri:0, instance:testcases_docker.ValidLogin@4d1c00d0]" started-at="2023-10-04T12:23:01 IST" name="browsersetup" finished-at="2023-10-04T12:23:03 IST" duration-ms="1310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browsersetup -->
+        <test-method signature="testclass()[pri:0, instance:testcases_docker.ValidLogin@4d1c00d0]" started-at="2023-10-04T12:23:03 IST" name="testclass" finished-at="2023-10-04T12:23:06 IST" duration-ms="3628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testclass -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases_docker.ValidLogin@4d1c00d0]" started-at="2023-10-04T12:23:06 IST" name="teardown" finished-at="2023-10-04T12:23:06 IST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testcases_docker.ValidLogin -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
