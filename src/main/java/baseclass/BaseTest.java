@@ -40,9 +40,9 @@ public class BaseTest
 	    } catch (Exception e) {
 	        System.out.println(e.getMessage());
 	    }
-
+	    PageDriver.setDriver(driver);
 	    driver.get("https://www.saucedemo.com/");
-		 PageDriver.setDriver(driver);
+		 
 		 //driver.get("https://www.saucedemo.com/");
 	 }
 	 @AfterClass
