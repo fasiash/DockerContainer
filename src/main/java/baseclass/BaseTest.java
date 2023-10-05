@@ -20,14 +20,15 @@ import org.testng.annotations.BeforeClass;
 
 public class BaseTest 
 {
-	WebDriver driver;
+	WebDriver driver =null;
 	 WebDriverWait wait;
 	 @BeforeClass
 	 public void browsersetup() throws MalformedURLException
 	 {
+		 System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		 ChromeOptions options = new ChromeOptions();
 	     options.setAcceptInsecureCerts(true);
-	     System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+	    
 	      //  ChromeOptions options = new ChromeOptions();
 	   //  options.setCapability(CapabilityType.BROWSER_NAME,"chrome");
 	  

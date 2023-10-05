@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 public class PageDriver
 {
-	private static ThreadLocal<WebDriver> webDriver=new ThreadLocal<>();
+	private static ThreadLocal<WebDriver> webDriver=new ThreadLocal<WebDriver>();
 	public static WebDriver getDriver()
 	{
 		//getter
