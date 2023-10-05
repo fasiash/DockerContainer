@@ -20,7 +20,7 @@ import org.testng.annotations.BeforeClass;
 
 public class BaseTest 
 {
-	WebDriver driver=null;
+	WebDriver driver;
 	 WebDriverWait wait;
 	 @BeforeClass
 	 public void browsersetup() throws MalformedURLException
@@ -40,7 +40,7 @@ public class BaseTest
 	        System.out.println(e.getMessage());
 	    }
 
-	driver.get("https://www.saucedemo.com/");
+	    driver.get("https://www.saucedemo.com/");
 		 PageDriver.setDriver(driver);
 		 //driver.get("https://www.saucedemo.com/");
 	 }
