@@ -34,10 +34,9 @@ public class BaseTest
 	   options.setBrowserVersion("117.0.5938.132");
 	  
 	    try {
-	  	   driver = new RemoteWebDriver(new URL("http://localhost:7900/wd/hub"), options);
+	    	System.out.println();
+	  	//   driver = new RemoteWebDriver(new URL("http://localhost:7900/wd/hub"), options);
 	       
-	    } catch (MalformedURLException e) {
-	        System.out.println("Invalid grid URL");
 	    } catch (Exception e) {
 	        System.out.println(e.getMessage());
 	    }
