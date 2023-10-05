@@ -20,26 +20,26 @@ import org.testng.annotations.BeforeClass;
 
 public class BaseTest 
 {
-	WebDriver driver =null;
+	WebDriver driver;
 	 WebDriverWait wait;
 	 @BeforeClass
 	 public void browsersetup() throws MalformedURLException
 	 {
 		 System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-		 ChromeOptions options = new ChromeOptions();
-	     options.setAcceptInsecureCerts(true);
+		// ChromeOptions options = new ChromeOptions();
+	   //  options.setAcceptInsecureCerts(true);
 	    
 	      //  ChromeOptions options = new ChromeOptions();
 	   //  options.setCapability(CapabilityType.BROWSER_NAME,"chrome");
 	  
-	    try {
-	  	   driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+	  //  try {
+	  	//   driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
 	       
-	    } catch (MalformedURLException e) {
+	   // } catch (MalformedURLException e) {
 	        System.out.println("Invalid grid URL");
-	    } catch (Exception e) {
-	        System.out.println(e.getMessage());
-	    }
+	   // } catch (Exception e) {
+	  //      System.out.println(e.getMessage());
+	   // }
 
 	    driver.get("https://www.saucedemo.com/");
 		 PageDriver.setDriver(driver);
