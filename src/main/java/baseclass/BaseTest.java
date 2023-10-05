@@ -29,10 +29,10 @@ public class BaseTest
 	     options.setAcceptInsecureCerts(true);
 	     System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 	      //  ChromeOptions options = new ChromeOptions();
-	     options.setCapability(CapabilityType.BROWSER_NAME,"chrome");
+	   //  options.setCapability(CapabilityType.BROWSER_NAME,"chrome");
 	  
 	    try {
-	  	   driver = new RemoteWebDriver(new URL("http://localhost:7900/wd/hub"), options);
+	  	   driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
 	       
 	    } catch (MalformedURLException e) {
 	        System.out.println("Invalid grid URL");
@@ -40,7 +40,7 @@ public class BaseTest
 	        System.out.println(e.getMessage());
 	    }
 
-	//driver.get("https://www.saucedemo.com/");
+	driver.get("https://www.saucedemo.com/");
 		 PageDriver.setDriver(driver);
 		 //driver.get("https://www.saucedemo.com/");
 	 }
