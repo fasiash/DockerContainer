@@ -42,13 +42,13 @@ public class BaseTest
 	   // }
 
 	    driver.get("https://www.saucedemo.com/");
-		 PageDriver.setDriver(driver);
+		// PageDriver.setDriver(driver);
 		 //driver.get("https://www.saucedemo.com/");
 	 }
 	 @AfterClass
 	 public void teardown()
 	 {
-		 PageDriver.getDriver().quit();
+		// PageDriver.getDriver().quit();
 		 //or
 		 driver.quit();
 	 }
