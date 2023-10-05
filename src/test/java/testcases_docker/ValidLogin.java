@@ -12,11 +12,11 @@ import baseclass.PageDriver;
 
 public class ValidLogin extends BaseTest
 {
-	
+	WebDriver driver;
 	@Test
 	public void testclass() throws Exception
 	{
-		WebDriver driver=PageDriver.getDriver();
+		driver=PageDriver.getDriver();
 		
 		pageobjects_docker.LoginPage validpage=new pageobjects_docker.LoginPage();
 		validpage.login("standard_user", "secret_sauce");

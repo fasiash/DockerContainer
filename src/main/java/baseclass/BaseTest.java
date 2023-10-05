@@ -27,23 +27,25 @@ public class BaseTest
 	 {
 		 System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		 ChromeOptions options = new ChromeOptions();
-	     options.setAcceptInsecureCerts(true);
-	    
+	     //options.setAcceptInsecureCerts(true);
+	   //System.out.println(driver);
 	      //  ChromeOptions options = new ChromeOptions();
 	   options.setCapability(CapabilityType.BROWSER_NAME,"chrome");
-	   options.setBrowserVersion("117.0.5938.132");
+	   //options.setBrowserVersion("117.0.5938.132");
 	  
 	    try {
 	    	System.out.println();
-	  	//   driver = new RemoteWebDriver(new URL("http://localhost:7900/wd/hub"), options);
+	    driver = new RemoteWebDriver(new URL("http://localhost:4410/wd/hub"), options);
+	    
 	       
 	    } catch (Exception e) {
+	    	// driver.get("https://www.saucedemo.com/");
 	        System.out.println(e.getMessage());
 	    }
-	    PageDriver.setDriver(driver);
+	   
 	    driver.get("https://www.saucedemo.com/");
-		 
-		 //driver.get("https://www.saucedemo.com/");
+	    PageDriver.setDriver(driver);
+	
 	 }
 	 @AfterClass
 	 public void teardown()
